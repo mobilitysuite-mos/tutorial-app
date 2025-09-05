@@ -1,0 +1,29 @@
+{
+  "table": {
+    "name": "monster",
+    "fields": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "name",
+        "type": "TEXT"
+      }
+    ],
+    "primaryKey": [
+      "id"
+    ],
+    "queries": {
+      "all": {
+        "custom": "SELECT *, REPLACE(LOWER(name), ' ', '_') AS imageName FROM monster;"
+      }
+    }
+  },
+  "source": {
+    "type": "replace",
+    "request": {
+      "url": "https://static-files.academy.mobilitysuite.de/monsters/monsters.json"
+    }
+  }
+}

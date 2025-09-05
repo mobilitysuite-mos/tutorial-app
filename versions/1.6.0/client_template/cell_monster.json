@@ -1,0 +1,11 @@
+{
+  "name": "cell_monster",
+  "content": {
+    "image": {
+      "value": "https://static-files.academy.mobilitysuite.de/monsters/images/{{name}}.jpg"
+    },
+    "title": {
+      "value": "{{name}}"
+    }
+  }
+}

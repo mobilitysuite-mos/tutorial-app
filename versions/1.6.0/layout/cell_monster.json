@@ -1,0 +1,68 @@
+{
+  "name": "cell_monster",
+  "layers": [
+    {
+      "type": "container",
+      "borderRadius": "6pt",
+      "classes": [
+        "fullSize"
+      ],
+      "children": [
+        {
+          "type": "color",
+          "classes": [
+            "fullSize"
+          ],
+          "value": "#1C0D30"
+        },
+        {
+          "type": "image",
+          "name": "image",
+          "dataKey": "image",
+          "constraints": [
+            {
+              "type": "pos",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "type": "pos",
+              "y": 0,
+              "anchor": "s",
+              "relativeAnchor": "s"
+            },
+            {
+              "type": "aspectRatio",
+              "ratio": 1
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "dataKey": "title",
+          "scaleType": "alignLeft",
+          "classes": [
+            "font16",
+            "fontInter"
+          ],
+          "constraints": [
+            {
+              "type": "pos",
+              "x": "10pt",
+              "y": 0,
+              "relativeTo": "image",
+              "relativeAnchor": "ne"
+            },
+            {
+              "type": "pos",
+              "x": "-10pt",
+              "y": 0,
+              "relativeAnchor": "se",
+              "anchor": "se"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
