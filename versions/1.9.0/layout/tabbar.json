@@ -1,0 +1,221 @@
+{
+  "name": "tabbar",
+  "layers": [
+    {
+      "type": "container",
+      "borderRadius": "25pt",
+      "constraints": [
+        {
+          "type": "pos",
+          "x": "15pt",
+          "y": 0
+        },
+        {
+          "type": "pos",
+          "relativeAnchor": "se",
+          "anchor": "se",
+          "x": "-15pt",
+          "y": 0
+        }
+      ],
+      "children": [
+        {
+          "type": "color",
+          "value": "#1C0D30",
+          "classes": [
+            "fullSize"
+          ]
+        },
+        {
+          "type": "container",
+          "borderRadius": "20pt",
+          "touchFeedback": "none",
+          "actions": [
+            {
+              "type": "switchTab",
+              "params": {
+                "index": 0
+              }
+            }
+          ],
+          "constraints": [
+            {
+              "type": "pos",
+              "x": "24pt",
+              "y": "6pt"
+            },
+            {
+              "type": "pos",
+              "x": "-24pt",
+              "y": "-6pt",
+              "anchor": "se",
+              "relativeAnchor": "s"
+            }
+          ],
+          "children": [
+            {
+              "type": "color",
+              "value": "#2F1650",
+              "states": {
+                "hidden": {
+                  "opacity": 0
+                }
+              },
+              "conditions": [
+                {
+                  "state": "hidden",
+                  "conditions": {
+                    "left": {
+                      "context": "tabView",
+                      "field": "currentTab"
+                    },
+                    "right": "0",
+                    "mode": "notEquals"
+                  }
+                }
+              ],
+              "classes": [
+                "fullSize"
+              ]
+            },
+            {
+              "type": "image",
+              "value": "asset://tab_monsters.png",
+              "borderRadius": "20pt",
+              "constraints": [
+                {
+                  "type": "pos",
+                  "x": 0,
+                  "y": 0,
+                  "anchor": "n",
+                  "relativeAnchor": "n"
+                },
+                {
+                  "type": "size",
+                  "width": "24pt",
+                  "height": "24pt"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "$lang(tabTitleMonsters)$",
+              "fontColor": "#9747FF",
+              "scaleType": "alignCenter",
+              "fontSize": "10pt",
+              "constraints": [
+                {
+                  "type": "pos",
+                  "x": 0,
+                  "y": "24pt"
+                },
+                {
+                  "type": "pos",
+                  "x": 0,
+                  "y": 0,
+                  "relativeAnchor": "se",
+                  "anchor": "se"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "borderRadius": "20pt",
+          "touchFeedback": "none",
+          "actions": [
+            {
+              "type": "switchTab",
+              "params": {
+                "index": 1
+              }
+            }
+          ],
+          "constraints": [
+            {
+              "type": "pos",
+              "x": "24pt",
+              "y": "6pt",
+              "relativeAnchor": "n"
+            },
+            {
+              "type": "pos",
+              "x": "-24pt",
+              "y": "-6pt",
+              "anchor": "se",
+              "relativeAnchor": "se"
+            }
+          ],
+          "children": [
+            {
+              "type": "color",
+              "value": "#2F1650",
+              "states": {
+                "hidden": {
+                  "opacity": 0
+                }
+              },
+              "conditions": [
+                {
+                  "state": "hidden",
+                  "conditions": {
+                    "left": {
+                      "context": "tabView",
+                      "field": "currentTab"
+                    },
+                    "right": "1",
+                    "mode": "notEquals"
+                  }
+                }
+              ],
+              "classes": [
+                "fullSize"
+              ]
+            },
+            {
+              "type": "image",
+              "value": "asset://tab_favorites.png",
+              "borderRadius": "20pt",
+              "constraints": [
+                {
+                  "type": "pos",
+                  "x": 0,
+                  "y": 0,
+                  "anchor": "n",
+                  "relativeAnchor": "n"
+                },
+                {
+                  "type": "size",
+                  "width": "24pt",
+                  "height": "24pt"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "$lang(tabTitleFavorites)$",
+              "fontColor": "#9747FF",
+              "scaleType": "alignCenter",
+              "fontSize": "10pt",
+              "constraints": [
+                {
+                  "type": "pos",
+                  "x": 0,
+                  "y": "24pt"
+                },
+                {
+                  "type": "pos",
+                  "x": 0,
+                  "y": 0,
+                  "relativeAnchor": "se",
+                  "anchor": "se"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

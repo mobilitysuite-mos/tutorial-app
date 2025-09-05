@@ -1,0 +1,47 @@
+{
+  "name": "cell_monster",
+  "content": {
+    "favoriteContainer": {
+      "actions": [
+        {
+          "type": "executeSQL",
+          "params": {
+            "sql": "INSERT OR REPLACE INTO favorite (monsterId, isFavorite) VALUES (?, CASE WHEN CAST(? AS INTEGER) = 1 THEN 0 ELSE 1 END);",
+            "sqlParams": [
+              "{{id}}",
+              "{{isFavorite}}"
+            ]
+          }
+        }
+      ]
+    },
+    "container": {
+      "actions": [
+        {
+          "type": "showView",
+          "params": {
+            "view": "monster_detail",
+            "queryParams": [
+              "{{id}}"
+            ]
+          }
+        }
+      ]
+    },
+    "image": {
+      "value": "https://static-files.academy.mobilitysuite.de/monsters/images/{{name}}.jpg"
+    },
+    "title": {
+      "value": "{{name}}"
+    },
+    "favoriteImage": {
+      "value": {
+        "left": "{{isFavorite}}",
+        "right": "1",
+        "mode": "equals",
+        "trueValue": "asset://favorite_active.png",
+        "falseValue": "asset://favorite_inactive.png"
+      }
+    }
+  }
+}
