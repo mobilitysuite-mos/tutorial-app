@@ -1,0 +1,18 @@
+{
+  "name": "tabView",
+  "content": {
+    "type": "tab",
+    "layout": "tabbar",
+    "tabbarHeight": "50pt",
+    "content": {
+      "tabs": [
+        {
+          "view": "monsters"
+        },
+        {
+          "view": "favorites"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,545 @@
+{
+  "name": "view_monster_detail",
+  "layers": [
+    {
+      "type": "gradient",
+      "direction": "TD",
+      "safeArea": {
+        "top": "contentOver",
+        "bottom": "contentOver"
+      },
+      "colors": [
+        "#5B2B99",
+        "#321755",
+        "#1D0E32",
+        "#090410"
+      ],
+      "classes": [
+        "fullSize"
+      ]
+    },
+    {
+      "type": "grid",
+      "columns": 12,
+      "insets": {
+        "left": "40pt",
+        "right": "40pt"
+      },
+      "classes": [
+        "fullSize"
+      ],
+      "children": [
+        {
+          "type": "text",
+          "scaleType": "alignCenter",
+          "dataKey": "title",
+          "maxLines": 2,
+          "classes": [
+            "font34",
+            "fontCinzel"
+          ],
+          "constraints": [
+            {
+              "type": "grid",
+              "colSpan": 12
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "dataKey": "image",
+          "fallbackImage": "asset://monster_fallback.png",
+          "placeholder": "asset://monster_fallback.png",
+          "placeholderFadeInDuration": 200,
+          "constraints": [
+            {
+              "type": "grid",
+              "colSpan": 12,
+              "aspectRatio": 12
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "constraints": [
+            {
+              "type": "grid",
+              "height": "10pt",
+              "colSpan": 12
+            }
+          ]
+        },
+        {
+          "type": "grid",
+          "columns": 9,
+          "constraints": [
+            {
+              "type": "grid",
+              "colSpan": 9,
+              "height": "66pt"
+            }
+          ],
+          "children": [
+            {
+              "type": "text",
+              "value": "$lang(alignment)$",
+              "fontColor": "#9747FF",
+              "classes": [
+                "font14"
+              ],
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 4,
+                  "height": "22pt"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "dataKey": "alignment",
+              "classes": [
+                "font14",
+                "fontInter"
+              ],
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 5,
+                  "height": "22pt"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "$lang(armorClass)$",
+              "fontColor": "#9747FF",
+              "classes": [
+                "font14",
+                "fontInter"
+              ],
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 4,
+                  "height": "22pt"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "dataKey": "armorClass",
+              "classes": [
+                "font14",
+                "fontInter"
+              ],
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 5,
+                  "height": "22pt"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "$lang(hitPoints)$",
+              "fontColor": "#9747FF",
+              "classes": [
+                "font14",
+                "fontInter"
+              ],
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 4,
+                  "height": "22pt"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "dataKey": "hitPoints",
+              "classes": [
+                "font14",
+                "fontInter"
+              ],
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 5,
+                  "height": "22pt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "constraints": [
+            {
+              "type": "grid",
+              "colSpan": 3,
+              "height": "66pt"
+            }
+          ],
+          "children": [
+            {
+              "type": "container",
+              "constraints": [
+                {
+                  "type": "size",
+                  "width": "60pt",
+                  "height": "60pt"
+                },
+                {
+                  "type": "pos",
+                  "x": 0,
+                  "y": 0,
+                  "anchor": "ne",
+                  "relativeAnchor": "ne"
+                }
+              ],
+              "children": [
+                {
+                  "type": "color",
+                  "borderRadius": "30pt",
+                  "value": "#5B2B99",
+                  "classes": [
+                    "fullSize"
+                  ]
+                },
+                {
+                  "type": "text",
+                  "value": "$lang(rating)$",
+                  "scaleType": "alignBottom",
+                  "classes": [
+                    "font14",
+                    "fontCinzel"
+                  ],
+                  "constraints": [
+                    {
+                      "type": "pos",
+                      "x": 0,
+                      "y": 0
+                    },
+                    {
+                      "type": "pos",
+                      "x": 0,
+                      "anchor": "e",
+                      "relativeAnchor": "e"
+                    },
+                    {
+                      "type": "size",
+                      "height": "50%"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "dataKey": "challengeRating",
+                  "scaleType": "alignTop",
+                  "classes": [
+                    "font20",
+                    "fontInter"
+                  ],
+                  "constraints": [
+                    {
+                      "type": "pos",
+                      "x": 0,
+                      "y": "45%"
+                    },
+                    {
+                      "type": "pos",
+                      "x": 0,
+                      "anchor": "e",
+                      "relativeAnchor": "e"
+                    },
+                    {
+                      "type": "size",
+                      "height": "50%"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "constraints": [
+            {
+              "type": "grid",
+              "height": "30pt",
+              "colSpan": 12
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "$lang(abilityScores)$",
+          "fontColor": "#9747FF",
+          "classes": [
+            "font14",
+            "fontInter"
+          ],
+          "constraints": [
+            {
+              "type": "grid",
+              "colSpan": 12,
+              "height": "22pt"
+            }
+          ]
+        },
+        {
+          "type": "grid",
+          "scrolling": false,
+          "columns": 12,
+          "constraints": [
+            {
+              "type": "grid",
+              "height": "48pt",
+              "colSpan": 12
+            }
+          ],
+          "children": [
+            {
+              "type": "layout",
+              "value": "cell_abilityScore",
+              "dataKey": "strAbilityScore",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 2,
+                  "height": "46pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_abilityScore",
+              "dataKey": "dexAbilityScore",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 2,
+                  "height": "46pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_abilityScore",
+              "dataKey": "conAbilityScore",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 2,
+                  "height": "46pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_abilityScore",
+              "dataKey": "intAbilityScore",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 2,
+                  "height": "46pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_abilityScore",
+              "dataKey": "wisAbilityScore",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 2,
+                  "height": "46pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_abilityScore",
+              "dataKey": "chaAbilityScore",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 2,
+                  "height": "46pt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "constraints": [
+            {
+              "type": "grid",
+              "height": "20pt",
+              "colSpan": 12
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "value": "#391B5F",
+          "constraints": [
+            {
+              "type": "grid",
+              "height": "1pt",
+              "colSpan": 12
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "constraints": [
+            {
+              "type": "grid",
+              "height": "20pt",
+              "colSpan": 12
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "value": "$lang(speed)$",
+          "fontColor": "#9747FF",
+          "classes": [
+            "font14",
+            "fontInter"
+          ],
+          "constraints": [
+            {
+              "type": "grid",
+              "colSpan": 11,
+              "height": "22pt"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "value": "asset://chevron-down.png",
+          "constraints": [
+            {
+              "type": "grid",
+              "colSpan": 1,
+              "height": "22pt"
+            }
+          ]
+        },
+        {
+          "type": "grid",
+          "name": "speedsList",
+          "scrolling": false,
+          "columns": 1,
+          "states": {
+            "hidden": {
+              "hidden": true
+            }
+          },
+          "constraints": [
+            {
+              "type": "grid",
+              "colSpan": 12,
+              "height": "160pt"
+            }
+          ],
+          "children": [
+            {
+              "type": "layout",
+              "value": "cell_speed",
+              "dataKey": "walkSpeed",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 1,
+                  "height": "20pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_speed",
+              "dataKey": "crawlSpeed",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 1,
+                  "height": "20pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_speed",
+              "dataKey": "hoverSpeed",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 1,
+                  "height": "20pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_speed",
+              "dataKey": "flySpeed",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 1,
+                  "height": "20pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_speed",
+              "dataKey": "burrowSpeed",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 1,
+                  "height": "20pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_speed",
+              "dataKey": "climbSpeed",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 1,
+                  "height": "20pt"
+                }
+              ]
+            },
+            {
+              "type": "layout",
+              "value": "cell_speed",
+              "dataKey": "swimSpeed",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 1,
+                  "height": "20pt"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "table": {
+    "name": "favorite",
+    "fields": [
+      {
+        "name": "monsterId",
+        "type": "INTEGER"
+      },
+      {
+        "name": "isFavorite",
+        "type": "INTEGER"
+      }
+    ],
+    "primaryKey": [
+      "monsterId"
+    ],
+    "queries": {
+      "allFavorites": {
+        "where": "isFavorite = 1"
+      },
+      "isFavoriteForId": {
+        "custom": "SELECT CASE WHEN isFavorite = 1 THEN 'true' ELSE 'false' END AS isFavorite FROM favorite WHERE monsterId = ?;"
+      }
+    }
+  }
+}

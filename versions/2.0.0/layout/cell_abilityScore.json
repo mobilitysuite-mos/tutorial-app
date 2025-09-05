@@ -1,0 +1,58 @@
+{
+  "name": "cell_abilityScore",
+  "layers": [
+    {
+      "type": "text",
+      "dataKey": "abilityScoreName",
+      "scaleType": "alignCenter",
+      "classes": [
+        "font14",
+        "fontCinzel"
+      ],
+      "constraints": [
+        {
+          "type": "pos",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "type": "pos",
+          "x": 0,
+          "anchor": "e",
+          "relativeAnchor": "e"
+        },
+        {
+          "type": "size",
+          "height": "23pt"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "dataKey": "abilityScoreValue",
+      "value": "24",
+      "scaleType": "alignCenter",
+      "classes": [
+        "font20",
+        "fontInter"
+      ],
+      "constraints": [
+        {
+          "type": "pos",
+          "x": 0,
+          "y": "23pt"
+        },
+        {
+          "type": "pos",
+          "x": 0,
+          "anchor": "e",
+          "relativeAnchor": "e"
+        },
+        {
+          "type": "size",
+          "height": "23pt"
+        }
+      ]
+    }
+  ]
+}

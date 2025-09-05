@@ -1,0 +1,10 @@
+{
+  "name": "favorites",
+  "content": {
+    "includes": [
+      "default"
+    ],
+    "type": "layered",
+    "layout": "view_favorites"
+  }
+}

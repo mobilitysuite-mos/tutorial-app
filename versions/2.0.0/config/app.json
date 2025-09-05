@@ -1,0 +1,6 @@
+{
+  "context": {
+    "updateInterval": 600,
+    "updateBehavior": "live"
+  }
+}
