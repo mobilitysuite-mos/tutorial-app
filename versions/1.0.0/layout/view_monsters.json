@@ -1,0 +1,14 @@
+{
+  "name": "view_monsters",
+  "layers": [
+    {
+      "type": "text",
+      "value": "Hello World!",
+      "scaleType": "alignCenter",
+      "fontSize": "32pt",
+      "classes": [
+        "fullSize"
+      ]
+    }
+  ]
+}

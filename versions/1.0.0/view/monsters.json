@@ -1,0 +1,7 @@
+{
+  "name": "monsters",
+  "content": {
+    "type": "layered",
+    "layout": "view_monsters"
+  }
+}
