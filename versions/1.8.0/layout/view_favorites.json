@@ -1,0 +1,15 @@
+{
+  "name": "view_favorites",
+  "layers": [
+    {
+      "type": "text",
+      "value": "Hello Favorites!",
+      "fontSize": "36pt",
+      "fontColor": "#000000",
+      "scaleType": "alignCenter",
+      "classes": [
+        "fullSize"
+      ]
+    }
+  ]
+}

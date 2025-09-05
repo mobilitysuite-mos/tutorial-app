@@ -1,0 +1,8 @@
+{
+  "name": "view_monster_detail",
+  "content": {
+    "title": {
+      "value": "{{name}}"
+    }
+  }
+}
