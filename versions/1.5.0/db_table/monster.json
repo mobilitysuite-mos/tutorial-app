@@ -1,0 +1,37 @@
+{
+  "table": {
+    "name": "monster",
+    "fields": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "imageName",
+        "type": "TEXT"
+      },
+      {
+        "name": "name",
+        "type": "TEXT"
+      }
+    ],
+    "primaryKey": [
+      "id"
+    ],
+    "queries": {
+      "all": {}
+    }
+  },
+  "data": [
+    {
+      "id": 0,
+      "imageName": "black_dragon.png",
+      "name": "$lang(monsterAdultBlackDragon)$"
+    },
+    {
+      "id": 1,
+      "imageName": "aboleth.png",
+      "name": "$lang(monsterAboleth)$"
+    }
+  ]
+}

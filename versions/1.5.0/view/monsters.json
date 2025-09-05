@@ -1,0 +1,9 @@
+{
+  "name": "monsters",
+  "content": {
+    "type": "layered",
+    "layout": "view_monsters",
+    "statusbarBackgroundColor": "#00000000",
+    "bottombarBackgroundColor": "#00000000"
+  }
+}

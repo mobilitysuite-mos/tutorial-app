@@ -1,0 +1,11 @@
+{
+  "name": "cell_monster",
+  "content": {
+    "image": {
+      "value": "asset://{{imageName}}"
+    },
+    "title": {
+      "value": "{{name}}"
+    }
+  }
+}
