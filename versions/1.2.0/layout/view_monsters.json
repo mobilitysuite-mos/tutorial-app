@@ -1,0 +1,202 @@
+{
+  "name": "view_monsters",
+  "layers": [
+    {
+      "type": "container",
+      "safeArea": {
+        "top": "contentOver",
+        "bottom": "contentOver"
+      },
+      "classes": [
+        "fullSize"
+      ],
+      "children": [
+        {
+          "type": "gradient",
+          "direction": "TD",
+          "safeArea": {
+            "bottom": "contentOver"
+          },
+          "colors": [
+            "#5B2B99",
+            "#321755",
+            "#1D0E32",
+            "#090410"
+          ],
+          "classes": [
+            "fullSize"
+          ]
+        },
+        {
+          "type": "container",
+          "name": "headerContainer",
+          "constraints": [
+            {
+              "type": "pos",
+              "x": 0,
+              "y": 0
+            },
+            {
+              "type": "pos",
+              "x": 0,
+              "anchor": "e",
+              "relativeAnchor": "e"
+            },
+            {
+              "type": "size",
+              "height": "116pt"
+            }
+          ],
+          "children": [
+            {
+              "type": "image",
+              "name": "headerImage",
+              "value": "asset://header_dragon.png",
+              "scaleType": "scaleToFill",
+              "constraints": [
+                {
+                  "type": "pos",
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "type": "pos",
+                  "x": 0,
+                  "anchor": "e",
+                  "relativeAnchor": "e"
+                },
+                {
+                  "type": "size",
+                  "height": "130pt"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": "$lang(monsters)$",
+              "scaleType": "alignLeft",
+              "classes": [
+                "font34",
+                "fontCinzelBold"
+              ],
+              "constraints": [
+                {
+                  "type": "pos",
+                  "x": "27pt",
+                  "y": "-15pt",
+                  "anchor": "sw",
+                  "relativeAnchor": "sw"
+                },
+                {
+                  "type": "pos",
+                  "x": "-27pt",
+                  "anchor": "e",
+                  "relativeAnchor": "e"
+                },
+                {
+                  "type": "size",
+                  "height": "36pt"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "grid",
+          "insets": {
+            "top": "25pt",
+            "right": "25pt",
+            "bottom": "25pt",
+            "left": "25pt"
+          },
+          "columns": 1,
+          "constraints": [
+            {
+              "type": "pos",
+              "x": 0,
+              "y": 0,
+              "relativeAnchor": "sw",
+              "relativeTo": "headerContainer"
+            },
+            {
+              "type": "pos",
+              "x": 0,
+              "y": 0,
+              "relativeAnchor": "se",
+              "anchor": "se"
+            }
+          ],
+          "children": [
+            {
+              "type": "container",
+              "borderRadius": "6pt",
+              "constraints": [
+                {
+                  "type": "grid",
+                  "colSpan": 1,
+                  "height": "63pt"
+                }
+              ],
+              "children": [
+                {
+                  "type": "color",
+                  "classes": [
+                    "fullSize"
+                  ],
+                  "value": "#1C0D30"
+                },
+                {
+                  "type": "image",
+                  "name": "image",
+                  "value": "asset://black_dragon.png",
+                  "constraints": [
+                    {
+                      "type": "pos",
+                      "x": 0,
+                      "y": 0
+                    },
+                    {
+                      "type": "pos",
+                      "y": 0,
+                      "anchor": "s",
+                      "relativeAnchor": "s"
+                    },
+                    {
+                      "type": "aspectRatio",
+                      "ratio": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "value": "$lang(monsterAdultBlackDragon)$",
+                  "scaleType": "alignLeft",
+                  "classes": [
+                    "font16",
+                    "fontInter"
+                  ],
+                  "constraints": [
+                    {
+                      "type": "pos",
+                      "x": "10pt",
+                      "y": 0,
+                      "relativeTo": "image",
+                      "relativeAnchor": "ne"
+                    },
+                    {
+                      "type": "pos",
+                      "x": "-10pt",
+                      "y": 0,
+                      "relativeAnchor": "se",
+                      "anchor": "se"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
