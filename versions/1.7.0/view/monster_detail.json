@@ -1,0 +1,169 @@
+{
+  "name": "monster_detail",
+  "content": {
+    "includes": [
+      "default"
+    ],
+    "type": "layered",
+    "layout": "view_monster_detail",
+    "query": "byId",
+    "table": "monster",
+    "content": {
+      "title": {
+        "value": "{{name}}"
+      },
+      "image": {
+        "value": "https://static-files.academy.mobilitysuite.de/monsters/images/{{name}}.jpg"
+      },
+      "alignment": {
+        "value": "{{alignment}}"
+      },
+      "armorClass": {
+        "value": "{{armorClass}}"
+      },
+      "hitPoints": {
+        "value": "{{hitPoints}}"
+      },
+      "challengeRating": {
+        "value": "**{{challengeRating}}**",
+        "contentType": "markdown"
+      },
+      "strAbilityScore": {
+        "data": {
+          "abilityScoreName": {
+            "value": "STR"
+          },
+          "abilityScoreValue": {
+            "value": "{{abilityScoreStrength}}"
+          }
+        }
+      },
+      "dexAbilityScore": {
+        "data": {
+          "abilityScoreName": {
+            "value": "DEX"
+          },
+          "abilityScoreValue": {
+            "value": "{{abilityScoreDexterity}}"
+          }
+        }
+      },
+      "conAbilityScore": {
+        "data": {
+          "abilityScoreName": {
+            "value": "CON"
+          },
+          "abilityScoreValue": {
+            "value": "{{abilityScoreConstitution}}"
+          }
+        }
+      },
+      "intAbilityScore": {
+        "data": {
+          "abilityScoreName": {
+            "value": "INT"
+          },
+          "abilityScoreValue": {
+            "value": "{{abilityScoreIntelligence}}"
+          }
+        }
+      },
+      "wisAbilityScore": {
+        "data": {
+          "abilityScoreName": {
+            "value": "WIS"
+          },
+          "abilityScoreValue": {
+            "value": "{{abilityScoreWisdom}}"
+          }
+        }
+      },
+      "chaAbilityScore": {
+        "data": {
+          "abilityScoreName": {
+            "value": "CHA"
+          },
+          "abilityScoreValue": {
+            "value": "{{abilityScoreCharisma}}"
+          }
+        }
+      },
+      "walkSpeed": {
+        "data": {
+          "speedTitle": {
+            "value": "WALK"
+          },
+          "speedValue": {
+            "value": "{{speedWalk}}"
+          }
+        }
+      },
+      "crawlSpeed": {
+        "data": {
+          "speedTitle": {
+            "value": "WALK"
+          },
+          "speedValue": {
+            "value": "{{speedWalk}}"
+          }
+        }
+      },
+      "hoverSpeed": {
+        "data": {
+          "speedTitle": {
+            "value": "HOVER"
+          },
+          "speedValue": {
+            "_value": {
+              "left": "{{speedHover}}",
+              "right": "true",
+              "mode": "equals",
+              "trueValue": "$lang(yes)$",
+              "falseValue": "$lang(no)$"
+            }
+          }
+        }
+      },
+      "flySpeed": {
+        "data": {
+          "speedTitle": {
+            "value": "FLY"
+          },
+          "speedValue": {
+            "value": "{{speedFly}}"
+          }
+        }
+      },
+      "burrowSpeed": {
+        "data": {
+          "speedTitle": {
+            "value": "BURROW"
+          },
+          "speedValue": {
+            "value": "{{speedBurrow}}"
+          }
+        }
+      },
+      "climbSpeed": {
+        "data": {
+          "speedTitle": {
+            "value": "CLIMB"
+          },
+          "speedValue": {
+            "value": "{{speedClimb}}"
+          }
+        }
+      },
+      "swimSpeed": {
+        "data": {
+          "speedTitle": {
+            "value": "SWIM"
+          },
+          "speedValue": {
+            "value": "{{speedSwim}}"
+          }
+        }
+      }
+    }
+  }
+}

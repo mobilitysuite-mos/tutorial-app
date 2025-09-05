@@ -1,0 +1,16 @@
+{
+  "name": "default",
+  "content": {
+    "monsters": "MONSTERS",
+    "monsterAdultBlackDragon": "Adult Black Dragon",
+    "monsterAboleth": "Aboleth",
+    "alignment": "Alignment",
+    "armorClass": "Armor Class",
+    "hitPoints": "Hit Points",
+    "rating": "R",
+    "abilityScores": "Ability Scores",
+    "speed": "Speed (feet)",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

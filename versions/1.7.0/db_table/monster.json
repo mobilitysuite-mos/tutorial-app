@@ -1,0 +1,121 @@
+{
+  "table": {
+    "name": "monster",
+    "fields": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "name",
+        "type": "TEXT"
+      },
+      {
+        "name": "alignment",
+        "type": "TEXT"
+      },
+      {
+        "name": "armorClass",
+        "type": "INTEGER",
+        "query": "armor_class"
+      },
+      {
+        "name": "hitPoints",
+        "type": "INTEGER",
+        "query": "hit_points"
+      },
+      {
+        "name": "challengeRating",
+        "type": "INTEGER",
+        "query": "challenge_rating_decimal"
+      },
+      {
+        "name": "abilityScoreStrength",
+        "type": "INTEGER",
+        "query": "ability_scores.strength"
+      },
+      {
+        "name": "abilityScoreDexterity",
+        "type": "INTEGER",
+        "query": "ability_scores.dexterity"
+      },
+      {
+        "name": "abilityScoreConstitution",
+        "type": "INTEGER",
+        "query": "ability_scores.constitution"
+      },
+      {
+        "name": "abilityScoreIntelligence",
+        "type": "INTEGER",
+        "query": "ability_scores.intelligence"
+      },
+      {
+        "name": "abilityScoreWisdom",
+        "type": "INTEGER",
+        "query": "ability_scores.wisdom"
+      },
+      {
+        "name": "abilityScoreCharisma",
+        "type": "INTEGER",
+        "query": "ability_scores.charisma"
+      },
+      {
+        "name": "speedUnit",
+        "type": "TEXT",
+        "query": "speed_all.unit"
+      },
+      {
+        "name": "speedWalk",
+        "type": "INTEGER",
+        "query": "speed_all.walk"
+      },
+      {
+        "name": "speedCrawl",
+        "type": "INTEGER",
+        "query": "speed_all.crawl"
+      },
+      {
+        "name": "speedFly",
+        "type": "INTEGER",
+        "query": "speed_all.fly"
+      },
+      {
+        "name": "speedBurrow",
+        "type": "INTEGER",
+        "query": "speed_all.burrow"
+      },
+      {
+        "name": "speedClimb",
+        "type": "INTEGER",
+        "query": "speed_all.climb"
+      },
+      {
+        "name": "speedSwim",
+        "type": "INTEGER",
+        "query": "speed_all.swim"
+      },
+      {
+        "name": "speedHover",
+        "type": "TEXT",
+        "query": "speed_all.hover"
+      }
+    ],
+    "primaryKey": [
+      "id"
+    ],
+    "queries": {
+      "allForList": {
+        "custom": "SELECT id, name FROM monster;"
+      },
+      "byId": {
+        "custom": "SELECT * FROM monster WHERE id = ?;"
+      }
+    }
+  },
+  "source": {
+    "type": "replace",
+    "request": {
+      "url": "https://static-files.academy.mobilitysuite.de/monsters/monsters.json"
+    }
+  }
+}

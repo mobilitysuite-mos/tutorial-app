@@ -1,0 +1,7 @@
+{
+  "name": "default",
+  "content": {
+    "statusbarBackgroundColor": "#00000000",
+    "bottombarBackgroundColor": "#00000000"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "cell_monster",
+  "content": {
+    "container": {
+      "actions": [
+        {
+          "type": "showView",
+          "params": {
+            "view": "monster_detail",
+            "queryParams": [
+              "{{id}}"
+            ]
+          }
+        }
+      ]
+    },
+    "image": {
+      "value": "https://static-files.academy.mobilitysuite.de/monsters/images/{{name}}.jpg"
+    },
+    "title": {
+      "value": "{{name}}"
+    }
+  }
+}
